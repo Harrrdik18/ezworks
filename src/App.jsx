@@ -47,7 +47,9 @@ const App = () => {
             </div>
             <h1>Suite Of Business Support Services</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt...Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
-            <ContactForm />
+            <div className="desktop-form">
+              <ContactForm />
+            </div>
           </div>
           <div className="services-grid">
             {services.map((service, index) => (
@@ -58,6 +60,9 @@ const App = () => {
                 description={service.description}
               />
             ))}
+          </div>
+          <div className="mobile-form">
+            <ContactForm />
           </div>
         </div>
       </div>

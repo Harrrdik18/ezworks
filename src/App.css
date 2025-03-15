@@ -59,6 +59,10 @@ h1 {
   gap: 1rem;
 }
 
+.mobile-form {
+  display: none;
+}
+
 /* Responsive Design */
 @media (max-width: 1080px) {
   .content-wrapper {
@@ -66,6 +70,8 @@ h1 {
   }
   
   .left-section {
+    display: flex;
+    flex-direction: column;
     flex: 0 0 100%;
     margin-bottom: 2rem;
   }
@@ -76,12 +82,29 @@ h1 {
 }
 
 @media (max-width: 720px) {
-  .services-grid {
-    grid-template-columns: 1fr;
+  .content-wrapper {
+    display: flex;
+    flex-direction: column;
   }
-  
-  h1 {
-    font-size: 1.75rem;
+
+  .left-section {
+    order: 0;
+  }
+
+  .desktop-form {
+    display: none;
+  }
+
+  .mobile-form {
+    display: block;
+    order: 2;
+    margin-top: 2rem;
+  }
+
+  .services-grid {
+    order: 1;
+    grid-template-columns: 1fr;
+    margin-bottom: 2rem;
   }
 }
 
@@ -96,5 +119,9 @@ h1 {
   
   .logo {
     font-size: 2rem;
+  }
+
+  .content-wrapper {
+    gap: 2rem;
   }
 }

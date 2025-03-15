@@ -2,8 +2,8 @@
   display: flex;
   gap: 1rem;
   max-width: 600px;
-  margin: 0 auto;
-  padding: 0 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 .input-group {
@@ -51,9 +51,18 @@ button:disabled {
   cursor: not-allowed;
 }
 
+@media (max-width: 720px) {
+  .contact-form {
+    width: 100%;
+    padding: 0 1rem;
+    margin-top: auto;  /* This will push the form to the bottom */
+  }
+}
+
 @media (max-width: 480px) {
   .contact-form {
     flex-direction: column;
+    padding: 1rem;
   }
   
   button {

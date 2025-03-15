@@ -27,7 +27,7 @@ const ContactForm = () => {
     }
 
     try {
-      const response = await fetch('https://api-nutt.onrender.com/api', {
+      const response = await fetch('https://test.ezworks.ai/api', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

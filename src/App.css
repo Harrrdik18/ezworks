@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&display=swap');
+
+.app {
+  min-height: 100vh;
+  padding: 2rem;
+  background-color: #ffffff;
+  font-family: 'Exo 2', sans-serif;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content-wrapper {
+  display: flex;
+  gap: 4rem;
+  align-items: flex-start;
+}
+
+.left-section {
+  flex: 0 0 35%;
+  text-align: left;
+}
+
+.logo {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  display: inline-block;
+}
+
+.ez {
+  color: #00B6FF;
+  font-weight: bold;
+}
+
+.works {
+  color: #333;
+  font-weight: normal;
+}
+
+h1 {
+  color: #333;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.left-section p {
+  color: #666;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.services-grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 1080px) {
+  .content-wrapper {
+    flex-direction: column;
+  }
+  
+  .left-section {
+    flex: 0 0 100%;
+    margin-bottom: 2rem;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 720px) {
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  h1 {
+    font-size: 1.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .app {
+    padding: 1rem;
+  }
+  
+  h1 {
+    font-size: 1.5rem;
+  }
+  
+  .logo {
+    font-size: 2rem;
+  }
+}
